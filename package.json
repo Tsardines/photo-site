@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Tsardines/photo-site#readme",
   "dependencies": {
-    "bulma": "^0.7.1"
+    "bulma": "^0.7.1",
+    "stylus": "^0.54.5"
   }
 }

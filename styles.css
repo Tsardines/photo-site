@@ -1,0 +1,17 @@
+.giant-container {
+  background-color: #40e0d0;
+  background-size: cover;
+}
+.left-aside {
+  background-color: #ffc0cb;
+  display: flex;
+  position: absolute;
+  width: 10em;
+}
+.links {
+  list-style-type: none;
+}
+.photo {
+  height: 40em;
+  width: 50em;
+}
