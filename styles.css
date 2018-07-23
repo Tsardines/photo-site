@@ -11,10 +11,6 @@
 .links {
   list-style-type: none;
 }
-.photo {
-  height: 40em;
-  width: 50em;
-}
 .footer {
   background-color: #008000;
   display: flex;
