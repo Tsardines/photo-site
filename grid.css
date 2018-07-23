@@ -1,5 +1,4 @@
 .photo-grid {
-  border: 2px solid #00f;
   display: grid;
   grid-row-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

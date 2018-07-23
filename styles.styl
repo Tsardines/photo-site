@@ -1,6 +1,7 @@
 body
   font-family: 'Alegreya Sans', sans-serif
   list-style-type: none
+  margin: 0
   text-decoration: none
 
 .giant-container
@@ -10,10 +11,23 @@ body
 .left-aside
   background-color: pink
   display: flex
-  position: absolute
-  text-align: left
-  width: 10em
+  flex-direction: column
+  height: 100vw
+  position: fixed
+  text-align: right
+  width: 15em
 
+.intro
+  background-color: turquoise
+  height: 20vh
+  padding-left: 3.5em
+  text-align: center
+
+.links
+  background-color: purple
+  font-size: 35px
+  height: 30vh
+  padding-right: 1.45em
 
 
 li > a
@@ -22,7 +36,7 @@ li > a
   text-decoration: none
 
 li > a:hover
-  color: green
+  color: black
 
 li > a:before
   background-color: black
