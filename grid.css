@@ -1,11 +1,12 @@
 .photo-grid {
+  border: 2px solid #00f;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: 2px solid #00f;
+  padding-top: 7em;
 }
 .item {
   grid-column: span 2;
   grid-row: span 2;
-  height: 20vh;
+  height: 60vh;
   width: 100vw;
 }
