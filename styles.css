@@ -1,3 +1,8 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
 .giant-container {
   background-color: #40e0d0;
   background-size: cover;
@@ -6,10 +11,35 @@
   background-color: #ffc0cb;
   display: flex;
   position: absolute;
+  text-align: left;
   width: 10em;
 }
-.links {
-  list-style-type: none;
+li > a {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+}
+li > a:hover {
+  color: #008000;
+}
+li > a:before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .footer {
   background-color: #008000;
