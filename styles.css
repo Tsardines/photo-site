@@ -1,5 +1,6 @@
-body {
+html {
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: 100%;
   list-style-type: none;
   margin: 0;
   text-decoration: none;
@@ -9,7 +10,6 @@ body {
   background-size: cover;
 }
 .left-aside {
-  background-color: #ffc0cb;
   display: flex;
   flex-direction: column;
   height: 100vw;
@@ -18,13 +18,11 @@ body {
   width: 15em;
 }
 .intro {
-  background-color: #40e0d0;
   height: 20vh;
   padding-left: 3.5em;
   text-align: center;
 }
 .links {
-  background-color: #800080;
   font-size: 35px;
   height: 30vh;
   padding-right: 1.45em;
