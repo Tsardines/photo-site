@@ -18,8 +18,10 @@ html {
   width: 15em;
 }
 .intro {
+  font-size: 2em;
   height: 20vh;
-  padding-left: 3.5em;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
   text-align: center;
 }
 .links {
