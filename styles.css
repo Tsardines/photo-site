@@ -57,27 +57,52 @@ li > a:hover:before {
   transform: scaleX(1);
 }
 .footer {
-  background-color: #008000;
   display: flex;
   flex-wrap: wrap;
   height: 10em;
 }
-.left-box {
-  background-color: #ffc0cb;
+.copy {
   display: flex;
-  height: 8em;
-  justify-content: center;
-  width: 4em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 80px 0 0 43%;
 }
-.foot-links {
-  list-style-type: none;
-}
-.right-box {
-  background-color: #800080;
+.footer-links {
   display: flex;
+  font-size: 1.2em;
   justify-content: center;
-  height: 8em;
-  width: 4em;
+  padding: 0 0 0 38%;
+}
+.li a {
+  color: #000;
+  text-decoration: none;
+}
+.li > a {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+}
+.li > a:hover {
+  color: #000;
+}
+.li > a:before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .resources {
   list-style-type: none;

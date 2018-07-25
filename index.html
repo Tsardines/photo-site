@@ -85,25 +85,58 @@
 
 
       <div class="footer">
-        <!-- <div class="left-box">
-          <div class="links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Street</a></li>
-            <li><a href="#">Portraits</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Travel</a></li>
-          </div>
-        </div>
 
-        <div class="right-box">
-          <div class="resources">
-            <li>Contact</li>
+          <div class="copy">Design & development by <br>Haley J. Sulcer &copy; 2018</div>
+          <div class="footer-links">
+            <li><a href="http://hjsulcer.netlify.com/">Personal Site -</a></li>
+            <li><a href="https://www.linkedin.com/in/haley-sulcer/">&nbsp;Linkedin -</a></li>
+            <li><a href="https://www.instagram.com/hjsulcer/">&nbsp;Instagram -</a></li>
+            <li><a href="https://github.com/Tsardines">&nbsp;Github</a></li>
           </div>
-        </div> -->
 
       </div>
 
     </div>
+
+<script>
+
+// calculates the number of rows required to accommodate the height of the item content
+  const resizeGridItem = item => {
+    grid = document.getElementsByClassName('grid')[0];
+    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+    rowSpan = Math.ceil((item.querySelector('content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+      item.style.gridRowEnd = "span " +rowSpan;
+  }
+
+// allows all items to be resized at once
+const resizeAllGridItems = () => {
+  allItems = document.getElementsByClassName('item');
+  for (x = 0; x < allItems.length; x++) {
+    resizeGridItem(allItemx[x]);
+  }
+}
+
+// calls the function that resizes all items once the page loads
+window.onload = resizeAllGridItems;
+
+window.addEventListener('resize', resizeAllGridItems);
+
+// attaches imagesLoaded to all grid items
+allItems = document.getElementsByClassName('item');
+let (x = 0; x < allItems.length; x++) {
+  imagesLoaded(allItems[x], resizeInstance);
+}
+
+const resizeInstance = instance => {
+  item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+</script>
+
+<script src="js/imagesLoaded.js"></script>
+
 
   </body>
 

@@ -62,30 +62,77 @@ li > a:hover:before
 
 
 
-
-
 .footer
-  background-color: green
+  // background-color: green
   display: flex
   flex-wrap: wrap
   height: 10em
 
-.left-box
-  background-color: pink
+.copy
   display: flex
-  height: 8em
-  justify-content: center
-  width: 4em
+  font-size: 1.2em
+  text-align: center
+  padding: 80px 0 0 43%
 
-.foot-links
-  list-style-type: none
-
-.right-box
-  background-color: purple
+.footer-links
+//  background-color: blue
   display: flex
+  font-size: 1.2em
   justify-content: center
-  height: 8em
-  width: 4em
+  padding: 0 0 0 38%
+
+.li a
+  color: black
+  text-decoration: none
+
+.li > a
+  color: black
+  position: relative
+  text-decoration: none
+
+.li > a:hover
+  color: black
+
+.li > a:before
+  background-color: black
+  bottom: 0
+  content: ""
+  height: 2px
+  left: 0
+  position: absolute
+  width: 100%
+  visibility: hidden
+  -webkit-transform: scaleX(0)
+  transform: scaleX(0)
+  -webkit-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+
+.li > a:hover:before
+  visibility: visible
+  -webkit-transform: scaleX(1)
+  transform: scaleX(1)
+
+
+
+
+
+
+// .left-box
+//   background-color: pink
+//   display: flex
+//   height: 8em
+//   justify-content: center
+//   width: 4em
+//
+// .foot-links
+//   list-style-type: none
+//
+// .right-box
+//   background-color: purple
+//   display: flex
+//   justify-content: center
+//   height: 8em
+//   width: 4em
 
 .resources
   list-style-type: none
