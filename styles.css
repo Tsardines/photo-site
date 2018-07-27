@@ -1,13 +1,11 @@
 html {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 100%;
   list-style-type: none;
   margin: 0;
   overflow-x: hidden;
   text-decoration: none;
+  font-size: 100%;
 }
 .giant-container {
-  background-color: #40e0d0;
   background-size: cover;
 }
 .left-aside {
@@ -24,8 +22,10 @@ html {
   padding-left: 1.5em;
   padding-top: 0.5em;
   text-align: center;
+  font-family: 'Racing Sans One', cursive;
 }
 .links {
+  font-family: 'Racing Sans One', cursive;
   font-size: 35px;
   height: 30vh;
   padding-right: 1.45em;
@@ -58,9 +58,12 @@ li > a:hover:before {
   transform: scaleX(1);
 }
 .footer {
-  background-color: #ffc0cb;
+  background-color: #424242;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  font-family: 'Racing Sans One', cursive;
+  letter-spacing: 0.1em;
   min-height: 30vh;
 }
 .copy {
@@ -71,24 +74,25 @@ li > a:hover:before {
   text-align: center;
 }
 .footer-links {
+  color: #fff;
   display: flex;
   font-size: 1.2em;
   justify-content: center;
 }
 .li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .li > a {
-  color: #000;
+  color: #fff;
   position: relative;
   text-decoration: none;
 }
 .li > a:hover {
-  color: #000;
+  color: #fff;
 }
 .li > a:before {
-  background-color: #000;
+  background-color: #fff;
   bottom: 0;
   content: "";
   height: 2px;
