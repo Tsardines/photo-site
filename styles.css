@@ -58,21 +58,22 @@ li > a:hover:before {
   transform: scaleX(1);
 }
 .footer {
+  background-color: #ffc0cb;
   display: flex;
-  flex-wrap: wrap;
-  height: 10em;
+  flex-direction: column;
+  min-height: 30vh;
 }
 .copy {
   display: flex;
   font-size: 1.2em;
+  justify-content: center;
+  padding-top: 4em;
   text-align: center;
-  padding: 80px 0 0 43%;
 }
 .footer-links {
   display: flex;
   font-size: 1.2em;
   justify-content: center;
-  padding: 0 0 0 38%;
 }
 .li a {
   color: #000;

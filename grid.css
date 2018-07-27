@@ -1,20 +1,43 @@
-.photo-grid {
+.photo-container {
+  background-color: #008000;
+  display: flex;
+}
+.photo-col-1 {
   background-color: #00f;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
   flex-wrap: wrap;
+  float: right;
   margin: 0 auto;
+  max-width: 20vw;
+}
+.photo-col-2 {
+  background-color: #ffa500;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  float: right;
+  margin-left: 30px;
   max-width: 40vw;
 }
 img {
   background: none;
-  float: left;
   height: auto;
   margin-left: 0%;
   min-width: 0;
-  padding-bottom: 1em;
+  padding-bottom: 2.65em;
   position: relative;
-  justify-content: space-between;
   max-width: 400px;
+}
+img:hover {
+  transform: scale(0.9);
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-in;
+  -webkit-transform: scale(0.15);
+  -ms-transition: 0.2s ease-in;
+  -ms-transform: scale(0.15);
+  -moz-transition: 0.2s ease-in;
+  -moz-transform: scale(1.1);
 }
