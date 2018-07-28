@@ -86,6 +86,8 @@
         </div>
     </div> <!-- photo container -->
 
+
+
       <div class="footer">
 
           <div class="copy">Design & development by <br>Haley J. Sulcer &copy; 2018</div>
@@ -102,38 +104,60 @@
 
 <script>
 
+
+
 // calculates the number of rows required to accommodate the height of the item content
-  const resizeGridItem = item => {
-    grid = document.getElementsByClassName('grid')[0];
-    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-    rowSpan = Math.ceil((item.querySelector('content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-      item.style.gridRowEnd = "span " +rowSpan;
-  }
+//   const resizeGridItem = item => {
+//     grid = document.getElementsByClassName('grid')[0];
+//     rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+//     rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+//     rowSpan = Math.ceil((item.querySelector('content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+//       item.style.gridRowEnd = "span " +rowSpan;
+//   }
+//
+// // allows all items to be resized at once
+// const resizeAllGridItems = () => {
+//   allItems = document.getElementsByClassName('item');
+//   for (x = 0; x < allItems.length; x++) {
+//     resizeGridItem(allItemx[x]);
+//   }
+// }
+//
+// // calls the function that resizes all items once the page loads
+// window.onload = resizeAllGridItems;
+//
+// window.addEventListener('resize', resizeAllGridItems);
+//
+// // attaches imagesLoaded to all grid items
+// allItems = document.getElementsByClassName('item');
+// let (x = 0; x < allItems.length; x++) {
+//   imagesLoaded(allItems[x], resizeInstance);
+// }
+//
+// const resizeInstance = instance => {
+//   item = instance.elements[0];
+//   resizeGridItem(item);
+//}
 
-// allows all items to be resized at once
-const resizeAllGridItems = () => {
-  allItems = document.getElementsByClassName('item');
-  for (x = 0; x < allItems.length; x++) {
-    resizeGridItem(allItemx[x]);
-  }
-}
-
-// calls the function that resizes all items once the page loads
-window.onload = resizeAllGridItems;
-
-window.addEventListener('resize', resizeAllGridItems);
-
-// attaches imagesLoaded to all grid items
-allItems = document.getElementsByClassName('item');
-let (x = 0; x < allItems.length; x++) {
-  imagesLoaded(allItems[x], resizeInstance);
-}
-
-const resizeInstance = instance => {
-  item = instance.elements[0];
-  resizeGridItem(item);
-}
+// const modal = document.getElementById('myModal');
+//
+// const img = document.getElementById('myImg');
+//
+// const modalImg = document.getElementById('img01');
+//
+// const captionText = document.getElementById('caption');
+//
+// img.onclick = function() {
+//     modal.style.display = 'block';
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
+//
+// const span = document.getElementsByClassName('close')[0];
+//
+// span.onclick = function() {
+//   modal.style.display = 'none';
+// }
 
 </script>
 
