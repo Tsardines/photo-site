@@ -19,5 +19,6 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "stylus": "^0.54.5"
-  }
+  },
+  "devDependencies": {}
 }
