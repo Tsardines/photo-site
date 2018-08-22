@@ -1,2 +1,4 @@
 # photo-site
-This is for a personal site that showcases my photography.
+Update: This site is no longer being worked on.
+
+The react-photo repo is the newest version of this project.
